@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anshuman Tiwari — AI systems engineer</title>
+<meta name="description" content="AI engineer working on LLM orchestration, GPU kernels and production RAG systems. FlashAttention-2 in Triton, a plan-verify-replan runtime for LLM workflows, and an agentic SaaS platform serving 80,000+ users.">
+<meta name="color-scheme" content="dark light">
+
+<meta property="og:title" content="Anshuman Tiwari — AI systems engineer">
+<meta property="og:description" content="LLM orchestration, GPU kernels, production RAG. Live demos and source for everything.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ansh101112.github.io/">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b0f17'/><text x='16' y='22' font-family='monospace' font-size='17' font-weight='700' fill='%235eead4' text-anchor='middle'>a</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">a</span>
+      <span class="brand-name">Anshuman Tiwari</span>
+    </a>
+    <nav class="masthead-links">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="https://github.com/Ansh101112" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/anshuman-tiwari-8b0a4b228/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ─────────────────────────────── HERO ─────────────────────────────── -->
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">AI systems engineer · Gorakhpur, India</p>
+    <h1>I build the parts of AI systems that have to be&nbsp;correct.</h1>
+    <p class="lede">
+      Attention kernels that stay numerically exact without materialising an
+      N&times;N matrix. An orchestration runtime where the model returns a
+      <strong>plan</strong> and never an action, so the runtime can reject it
+      before anything runs. RAG pipelines that hold up at 80,000&nbsp;users.
+    </p>
+    <p class="lede-sub">
+      Currently AI Engineer at <strong>Juristo AI Labs</strong>. B.Tech ECE (IoT)
+      at MMMUT Gorakhpur, 2027.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">See the work</a>
+      <a class="btn" href="mailto:tanshuman145@gmail.com">Get in touch</a>
+    </div>
+    <ul class="hero-stats">
+      <li><b>80,000+</b><span>users on a platform I built</span></li>
+      <li><b>40%</b><span>LLM inference cost cut</span></li>
+      <li><b>O(N)</b><span>attention memory, down from O(N²)</span></li>
+      <li><b>2009</b><span>LeetCode Knight rating</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────────────────────── WORK ─────────────────────────────── -->
+<section id="work" class="band">
+  <div class="wrap">
+    <h2 class="section-title">Experience</h2>
+
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <h3>AI Engineer</h3>
+          <p class="role-org">Juristo AI Labs</p>
+        </div>
+        <span class="when">Dec 2025 — present</span>
+      </div>
+      <ul class="bullets">
+        <li>Built and scaled a production Next.js AI platform spanning APIs, authentication, background jobs and frontend delivery for <strong>80,000+ users</strong>.</li>
+        <li>Engineered a 4-stage RAG pipeline — document parsing, chunking, embeddings, retrieval — to deliver context-grounded legal responses.</li>
+        <li>Integrated LLM inference through OpenRouter behind a multi-agent routing layer that dispatches queries to the right tools and workflows.</li>
+        <li>Cut LLM inference cost <strong>40%</strong> with prompt caching and selective routing of suitable workflows to lighter models.</li>
+      </ul>
+    </article>
+
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <h3>Full Stack Developer Intern</h3>
+          <p class="role-org">Wecofy Pvt. Ltd. <span class="tag">Letter of Recommendation</span></p>
+        </div>
+        <span class="when">Jun 2025 — Aug 2025</span>
+      </div>
+      <ul class="bullets">
+        <li>Built a MERN commerce and delivery platform covering product listings, cart, order lifecycle and delivery operations.</li>
+        <li>Implemented Socket.io real-time tracking and notifications across three stakeholder groups: customers, vendors and delivery partners.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ───────────────────────────── PROJECTS ───────────────────────────── -->
+<section id="projects" class="band alt">
+  <div class="wrap">
+    <h2 class="section-title">Selected work</h2>
+    <p class="section-note">
+      Everything here is open source. Where there's a live link, it runs the real
+      thing — not a video, not a mockup.
+    </p>
+
+    <article class="project featured">
+      <div class="project-head">
+        <div>
+          <h3>Workflow LLM Orchestrator</h3>
+          <p class="project-kicker">A plan → verify → replan runtime for LLM workflows</p>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-primary btn-sm" href="https://ansh101112.github.io/workflow-llm-orchestrator/" target="_blank" rel="noopener noreferrer">Live harness</a>
+          <a class="btn btn-sm" href="https://github.com/Ansh101112/workflow-llm-orchestrator" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
+      </div>
+      <p>
+        The LLM returns <strong>data, never actions</strong>. It hands back a plan;
+        the runtime decides whether that plan is legal — does that tool exist, are
+        the argument types right, is there a cycle in the dependencies — and only
+        then executes it as a parallel DAG. Every output is verified. Anything
+        wrong is repaired under a bounded budget, keeping the steps that worked.
+      </p>
+      <p>
+        Then I measured what each stage is actually worth by turning it off. The
+        result worth knowing: <strong>drop the verifier and the run still reports
+        <code>success: true</code></strong> while returning a wrong answer — only
+        an external grader notices. Drop the repair budget instead and you get the
+        same score but a loud failure. And keeping only the free structural checks
+        matched full accuracy at a third of the LLM calls, which says the LLM judge
+        earned nothing on that suite.
+      </p>
+      <p class="project-hook">
+        The whole engine — planner, validator, DAG executor, verifier, replanner and
+        the eval harness — is <strong>40&nbsp;kB of dependency-free JavaScript that
+        runs in your browser</strong>. Open the live link, build your own
+        configuration, swap any stage prompt, add your own tasks, and watch the plan
+        graph execute node by node.
+      </p>
+      <ul class="chips">
+        <li>TypeScript</li><li>Agent orchestration</li><li>Tool calling</li>
+        <li>DAG scheduling</li><li>LLM-as-judge</li><li>Evals</li><li>Zero deps</li>
+      </ul>
+    </article>
+
+    <article class="project featured">
+      <div class="project-head">
+        <div>
+          <h3>FlashAttention in Triton</h3>
+          <p class="project-kicker">Exact IO-aware attention kernels, forward and backward</p>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-sm" href="https://github.com/Ansh101112/flashattention-triton" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
+      </div>
+      <p>
+        FlashAttention-2 forward and backward kernels written in Triton from the
+        papers (arXiv:2205.14135, arXiv:2307.08691). Online softmax with running
+        max and sum statistics keeps tiled attention <strong>numerically exact</strong>
+        without ever materialising the N&times;N score matrix in HBM.
+      </p>
+      <p>
+        Activation memory drops from O(N²) to <strong>O(N)</strong> by recomputing
+        probability tiles in the backward pass from a saved log-sum-exp vector.
+        Exactness is validated against an fp32 oracle across fp16/bf16, causal
+        masking, head dimensions and ragged sequence lengths — because a fast
+        attention kernel that is quietly wrong is worse than a slow one.
+      </p>
+      <p>
+        Ships with an autotuned benchmark harness reporting latency, achieved
+        TFLOP/s and peak memory against <code>scaled_dot_product_attention</code>
+        and an O(N²) baseline, plus a drop-in <code>nn.Module</code>.
+      </p>
+      <ul class="chips">
+        <li>Triton</li><li>CUDA</li><li>PyTorch</li><li>GPU kernels</li>
+        <li>Attention internals</li><li>Numerical exactness</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <div>
+          <h3>Jabrod</h3>
+          <p class="project-kicker">Agentic AI SaaS — founded and built</p>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-sm" href="https://docs.jabrod.com" target="_blank" rel="noopener noreferrer">Docs</a>
+        </div>
+      </div>
+      <p>
+        An agentic platform that automates business workflows end to end: document
+        ingestion, vector storage and agent orchestration, serving 3,000+ users.
+      </p>
+      <ul class="chips"><li>Next.js</li><li>Vector DB</li><li>Agents</li><li>RAG</li></ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <div>
+          <h3>Online Meeting Platform</h3>
+          <p class="project-kicker">Low-latency video with in-call AI</p>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-sm" href="https://jmeet.vercel.app" target="_blank" rel="noopener noreferrer">Live</a>
+        </div>
+      </div>
+      <p>
+        Real-time meetings over WebRTC with Clerk authentication and OpenAI APIs
+        powering in-call assistance.
+      </p>
+      <ul class="chips"><li>Next.js</li><li>WebRTC</li><li>Clerk</li><li>OpenAI APIs</li></ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <div>
+          <h3>College Resources Portal</h3>
+          <p class="project-kicker">Academic materials, notices and club management</p>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-sm" href="https://mmmut.xyz" target="_blank" rel="noopener noreferrer">Live</a>
+        </div>
+      </div>
+      <p>
+        An institutional platform with role-based access, built for and used by
+        students at MMMUT.
+      </p>
+      <ul class="chips"><li>Full stack</li><li>RBAC</li><li>MongoDB</li></ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <div>
+          <h3>mini-rag</h3>
+          <p class="project-kicker">A compact retrieval-augmented generation pipeline</p>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-sm" href="https://mini-rag-chi.vercel.app" target="_blank" rel="noopener noreferrer">Live</a>
+          <a class="btn btn-sm" href="https://github.com/Ansh101112/mini-rag" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
+      </div>
+      <p>Chunking, embeddings, retrieval and grounded answering, kept small enough to read in one sitting.</p>
+      <ul class="chips"><li>TypeScript</li><li>Embeddings</li><li>Retrieval</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- ────────────────────────────── SKILLS ────────────────────────────── -->
+<section id="skills" class="band">
+  <div class="wrap">
+    <h2 class="section-title">Skills</h2>
+    <dl class="skills">
+      <div><dt>Languages</dt><dd>C++, C, Python, JavaScript, TypeScript, SQL</dd></div>
+      <div><dt>AI / ML systems</dt><dd>LLMs, AI agents, agent orchestration, RAG, tool calling, embeddings, vector databases, prompt caching, GPU kernel programming (Triton/CUDA), attention &amp; transformer internals</dd></div>
+      <div><dt>Frameworks &amp; APIs</dt><dd>PyTorch, Triton, LangChain, LangGraph, OpenAI APIs, OpenRouter</dd></div>
+      <div><dt>Web &amp; backend</dt><dd>Next.js, React, Node.js, Express, Socket.io, REST APIs</dd></div>
+      <div><dt>Databases &amp; cloud</dt><dd>MongoDB, PostgreSQL, Firebase, Supabase, Convex, GCP, AWS</dd></div>
+      <div><dt>Tools</dt><dd>Git, GitHub, Docker, Postman, pytest, GitHub Actions</dd></div>
+    </dl>
+
+    <h2 class="section-title mt">Competitive programming</h2>
+    <ul class="cp">
+      <li><b>LeetCode</b><span>Knight · 2009</span></li>
+      <li><b>Codeforces</b><span>Specialist · 1508</span></li>
+      <li><b>CodeChef</b><span>4 star</span></li>
+    </ul>
+
+    <h2 class="section-title mt">Education</h2>
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <h3>Madan Mohan Malaviya University of Technology, Gorakhpur</h3>
+          <p class="role-org">B.Tech, Electronics &amp; Communication Engineering (Internet of Things) · CGPA 8.39</p>
+        </div>
+        <span class="when">2023 — 2027</span>
+      </div>
+    </article>
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <h3>Udaya Public School</h3>
+          <p class="role-org">CBSE Class XII — 90% · CBSE Class X — 96.2%</p>
+        </div>
+        <span class="when">2021 — 2023</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ────────────────────────────── CONTACT ───────────────────────────── -->
+<section class="band alt contact">
+  <div class="wrap">
+    <h2 class="section-title">Get in touch</h2>
+    <p class="lede">
+      I'm most interested in work where correctness is load-bearing — inference
+      systems, agent runtimes, kernels. If that's what you're building, I'd like
+      to hear about it.
+    </p>
+    <div class="contact-links">
+      <a class="btn btn-primary" href="mailto:tanshuman145@gmail.com">tanshuman145@gmail.com</a>
+      <a class="btn" href="https://github.com/Ansh101112" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/anshuman-tiwari-8b0a4b228/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="btn" href="tel:+919198884058">+91 91988 84058</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Built by hand — no framework, no dependencies. <a href="https://github.com/Ansh101112/ansh101112.github.io" target="_blank" rel="noopener noreferrer">Source</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
